@@ -1,0 +1,120 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS & RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FCEAE6; /* Fundo rosa pastel do cartão */
+    color: #743336; /* Tom bordô principal do cartão */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. TIPOGRAFIA ELEGANTE (IDENTIDADE DO CARTÃO)
+   ========================================================================== */
+.brand-title, .hero h2, #sobre h2, #servicos h2 {
+    font-family: 'Playfair Display', serif;
+    color: #743336;
+    font-weight: 600;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: #A36363;
+    font-weight: bold;
+}
+
+.phone-link {
+    color: #743336;
+    font-size: 1.4rem;
+}
+
+/* ==========================================================================
+   3. SEÇÃO HERO (PRINCIPAL)
+   ========================================================================== */
+.hero {
+    background: linear-gradient(135deg, #FFF3F0 0%, #FCEAE6 100%);
+    min-height: 65vh;
+    padding: 60px 0;
+}
+
+.sub-hero-tag {
+    color: #743336;
+    border-color: #A36363 !important;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   4. SEÇÃO SOBRE & IMAGEM DA PROFISSIONAL
+   ========================================================================== */
+.img-profissional {
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(116, 51, 54, 0.15) !important;
+}
+
+/* ==========================================================================
+   5. CARDS DE SERVIÇOS
+   ========================================================================== */
+.card-servico {
+    background-color: #A36363 !important; /* Rosa queimado do cartão */
+    border-radius: 16px !important;
+    box-shadow: 0 10px 20px rgba(116, 51, 54, 0.08) !important;
+    transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+}
+
+/* ==========================================================================
+   6. IMAGENS DECORATIVAS DE BACKGROUND (ESTILO DO CARTÃO)
+   ========================================================================== */
+.decoracao-folha-topo {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 200px;
+    opacity: 0.25; /* Deixa a folha suave ao fundo */
+    pointer-events: none;
+    transform: rotate(90px);
+}
+
+.decoracao-folha-baixo {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 200px;
+    opacity: 0.25;
+    pointer-events: none;
+    transform: scaleX(-1); /* Inverte a imagem para dar simetria */
+}
+
+/* ==========================================================================
+   7. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #743336 !important; /* Tom bordô escuro para fechar com elegância */
+}
+
+/* ==========================================================================
+   8. RESPONSIVIDADE MOBILE
+   ========================================================================== */
+@media (max-width: 768px) {
+    .text-center-mobile {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .phone-link {
+        font-size: 1.2rem;
+    }
+}
