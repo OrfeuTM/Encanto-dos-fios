@@ -26,7 +26,7 @@ body {
 .brand-subtitle {
     font-size: 0.75rem;
     letter-spacing: 4px;
-    color: #A36363;
+    color: #743336; /* Ajustado para dar mais leitura no topo */
     font-weight: bold;
 }
 
@@ -36,7 +36,28 @@ body {
 }
 
 /* ==========================================================================
-   3. SEÇÃO HERO (PRINCIPAL)
+   3. AJUSTE DO CABEÇALHO (HEADER) - AGORA COM O TOM DOS CARDS
+   ========================================================================== */
+header.navbar {
+    background-color: #A36363 !important; /* Rosa queimado idêntico aos cards */
+    border-bottom: 1px solid rgba(116, 51, 54, 0.2) !important;
+    box-shadow: 0 4px 12px rgba(116, 51, 54, 0.08) !important;
+}
+
+/* Ajuste dos textos do topo para ficarem legíveis sobre o fundo rosa queimado */
+header.navbar .brand-title, 
+header.navbar .phone-link {
+    color: #ffffff !important;
+}
+
+header.navbar .brand-subtitle,
+header.navbar .text-muted {
+    color: #FCEAE6 !important; /* Rosa pastel claro para os subtítulos do topo */
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   4. SEÇÃO HERO (PRINCIPAL)
    ========================================================================== */
 .hero {
     background: linear-gradient(135deg, #FFF3F0 0%, #FCEAE6 100%);
@@ -52,7 +73,7 @@ body {
 }
 
 /* ==========================================================================
-   4. SEÇÃO SOBRE & IMAGEM DA PROFISSIONAL
+   5. SEÇÃO SOBRE & IMAGEM DA PROFISSIONAL
    ========================================================================== */
 .img-profissional {
     max-width: 100%;
@@ -63,7 +84,7 @@ body {
 }
 
 /* ==========================================================================
-   5. CARDS DE SERVIÇOS
+   6. CARDS DE SERVIÇOS
    ========================================================================== */
 .card-servico {
     background-color: #A36363 !important; /* Rosa queimado do cartão */
@@ -77,33 +98,15 @@ body {
 }
 
 /* ==========================================================================
-   6. IMAGENS DECORATIVAS DE BACKGROUND (ESTILO DO CARTÃO)
-   ========================================================================== */
-.decoracao-folha-topo {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 200px;
-    opacity: 0.25; /* Deixa a folha suave ao fundo */
-    pointer-events: none;
-    transform: rotate(90px);
-}
-
-.decoracao-folha-baixo {
-    position: absolute;
-    bottom: -20px;
-    left: -20px;
-    width: 200px;
-    opacity: 0.25;
-    pointer-events: none;
-    transform: scaleX(-1); /* Inverte a imagem para dar simetria */
-}
-
-/* ==========================================================================
-   7. RODAPÉ (FOOTER)
+   7. RODAPÉ (FOOTER) - AGORA COM O MESMO TOM DOS CARDS
    ========================================================================== */
 footer {
-    background-color: #743336 !important; /* Tom bordô escuro para fechar com elegância */
+    background-color: #A36363 !important; /* Rosa queimado unificado */
+}
+
+/* Ajuste sutil do destaque do telefone no rodapé para melhor contraste */
+footer .text-warning {
+    color: #FCEAE6 !important; 
 }
 
 /* ==========================================================================
